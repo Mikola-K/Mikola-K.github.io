@@ -13,4 +13,4 @@ https://www.figma.com/file/vwiwu6GnDphlI25vncvl3F/LabWork1-V3
 
 Installation
 Clone repo 
-Open main.html in you browser
+Open index.html in you browser
