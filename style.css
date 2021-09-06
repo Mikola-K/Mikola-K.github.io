@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
 header {
     width: 100%;
     left: 0;
@@ -29,6 +33,7 @@ button.login__button, button.register__button {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    font-family: 'Inter';
 }
 
 button.login__button:active, button.register__button:active {
@@ -78,10 +83,11 @@ h3.intro__tittle {
     line-height: 50px;
     max-width: 420px;
     margin: 0;
+    font-family: 'Playfair Display', serif;
 }
 
 h6.intro__subtext {
-    font-family: Mulish;
+    font-family: 'Mulish', sans-serif;
     max-width: 400px;
     height: 90px;
     font-size: 17px;
@@ -99,7 +105,7 @@ h6.intro__subtext {
     height: 48px;
     background: #FB8F1D;
     border-radius: 8px;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
@@ -110,6 +116,7 @@ h6.intro__subtext {
     box-sizing: border-box;
     margin-top: 39px;
     cursor: pointer;
+    font-family: 'Inter';
 }
 
 .download__btn:active {
@@ -162,6 +169,7 @@ h1.main__avtor {
     font-weight: 700;
     margin-bottom: 0;
     margin-top: 0;
+    font-family: 'Inter';
 }
 
 h1.main__founder {
@@ -169,6 +177,7 @@ h1.main__founder {
     line-height: 48px;
     font-weight: 400;    
     margin-top: 0;
+    font-family: 'Inter';
 }
 
 .main__container {
@@ -206,15 +215,16 @@ h1.main__founder {
     margin: 0 auto;
     margin-top: 150px;
     text-align: center;
+    ;
 }
 
 .slide__header {
     font-size: 36px;
     font-weight: 700;
     line-height: 50px;
-    font-family: Playfair Display;
     margin-bottom: 0;
     margin-top: 0;
+    font-family: 'Playfair Display';
 } 
 
 .view__all {
@@ -229,7 +239,7 @@ h1.main__founder {
     font-size: 19px;
     font-weight: 700;
     line-height: 30px;
-    font-family: Inter;
+    font-family: 'Inter';
     max-width: 270px;
 }
 
@@ -241,9 +251,10 @@ h1.main__founder {
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
-    max-width: 230px;
+    max-width: 270px;
     color: #7D7987;
     margin-bottom: 23px;
+    font-family: 'Inter';
 }
 
 .slide__subtext#first {
@@ -273,6 +284,7 @@ h1.main__founder {
     font-size: 15px;
     line-height: 28px;
     text-decoration: none;
+    font-family: 'Inter';
 }
 
 .footer {
@@ -295,6 +307,7 @@ h1.main__founder {
     line-height: 28px;
     margin-top: 40px;
     margin-bottom: 0;
+    font-family: 'Mulish';
 }
 
 .footer__logo {
