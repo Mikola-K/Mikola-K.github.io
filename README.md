@@ -12,7 +12,6 @@ Requirements:
 https://www.figma.com/file/vwiwu6GnDphlI25vncvl3F/LabWork1-V3
 
 ## Installation
-Clone repo 
+Clone repo and
 Open index.html in you browser
-=======
 
