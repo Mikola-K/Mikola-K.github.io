@@ -5,12 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
     </head>
-<body>
+<body id="body">
     <header>
+        <div  onclick="toggleMenu()" id="header__burger" class="header__burger">
+            <span></span>
+        </div>
         <div class="header__body">
-            <nav class="top-nav">
+            <nav  id="nav-links" class="header__menu">
                 <ul class="nav-ul">
                     <li><a href="#" id="home" class="nav__header">Home</a></li> 
                     <li><a href="#" class="nav__header">Destination</a></li>
@@ -40,21 +43,21 @@
         </div>
         </section>
         <section class="section__two">
-            <div class="main__container">
-                    <div class="main__text">
-                        <h3 class="main__header">Testimonials</h3>
-                        <img class="main__icons" src="./photos/Vector.png" alt="404">
-                        <img class="main__icons" src="./photos/Vector.png" alt="404">
-                        <img class="main__icons" src="./photos/Vector.png" alt="404">
-                        <img class="main__icons" src="./photos/Vector.png" alt="404">
-                        <img class="main__icons" src="./photos/Vector.png" alt="404">
-                        <div class="main__title">
-                            <h2 class="main__subtitle">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</h2>
-                            <h1 class="main__avtor">Edward Newgate</h1>
-                            <h1 class="main__founder">Founder Circle</h1>
+            <div class="home__container">
+                    <div class="home__text">
+                        <h3 class="home__header">Testimonials</h3>
+                        <img class="home__icons" src="./photos/Vector.png" alt="404">
+                        <img class="home__icons" src="./photos/Vector.png" alt="404">
+                        <img class="home__icons" src="./photos/Vector.png" alt="404">
+                        <img class="home__icons" src="./photos/Vector.png" alt="404">
+                        <img class="home__icons" src="./photos/Vector.png" alt="404">
+                        <div class="home__title">
+                            <h2 class="home__subtitle">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</h2>
+                            <h1 class="home__avtor">Edward Newgate</h1>
+                            <h1 class="home__founder">Founder Circle</h1>
                         </div>
                     </div>
-                    <div class="main_photos">
+                    <div class="home_photos">
                         <img class="image__6" src="./photos/image 6.png" alt="404">
                     </div>
             </div>
@@ -119,5 +122,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

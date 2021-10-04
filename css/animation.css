@@ -1,0 +1,62 @@
+@keyframes floating {
+    0% {
+      transform: translateY(50px);
+    }
+  
+    50% {
+      transform: translateY(150px);
+      transform: translateX(100px);
+    }
+  
+    100% {
+      transform: translateY(50px);
+      
+    }
+}
+
+@keyframes scale {
+    0% {
+      transform: scaleX(0.5) scaleY(0.5);
+      }
+    100% {
+      transform: scaleX(1) scaleY(1);
+      }
+}
+
+button.register__button:hover {
+    background-color: white;
+    color: #FB8F1D;
+}
+
+button.login__button:hover {
+    background-color: #FB8F1D;
+    color: white;
+}
+
+a.nav__header:hover, a.nav__header#home:hover {
+    text-decoration: underline;
+}
+
+.view__all:hover {    
+    text-decoration: underline;
+    text-decoration-color: #FB8F1D;
+}
+
+.read__more:hover {
+    font-weight: 100;
+}
+
+.download__btn:active {
+    transform: scale(0.98);
+}
+
+.download__btn:hover {
+    font-weight: 100;
+    border-color:  #FB8F1D; 
+    color: #FB8F1D;
+    background-color: white;
+}
+
+button.login__button:active, button.register__button:active {
+    transform: scale(0.98);
+}

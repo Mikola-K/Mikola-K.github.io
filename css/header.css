@@ -1,0 +1,82 @@
+header {
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header__body {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 35px;
+    max-width: 1200px;
+}
+
+button.login__button, button.register__button {
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #FB8F1D;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 60px;
+    align-items: center;
+    color: #FB8F1D;
+    background-color: white;
+    width: 132px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+
+button.register__button {
+    margin-left: 30px;
+    background-color: #FB8F1D;
+    color: white;
+}
+
+.header__burger {
+    display: none;
+}
+
+nav.header__menu {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    min-width: 347px;
+    display: flex;
+    flex: 0 0 494/1240*100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 347px;
+    align-items: center;
+    font-family: 'Inter';
+}
+
+a.nav__header#home {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.nav__header {
+    color:#B8BECD;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+img.yelow__circle {
+    z-index: 2;
+    left: 51.1vw;
+    top: 3.3vw;
+    position: absolute;
+}
