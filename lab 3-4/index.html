@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+    <section class="section__main" id="section__main">
+    <header>
+        <div class="header__body">
+            <nav class="nav__header">
+                <div class="header__menu">
+                    <h2>My Car</h2>
+                    <div class="header__buttons">
+                        <button class="header__button" type="button">My Cars</button>
+                        <button id="create__button" class="header__button" type="button">Create Cars</button>
+                    </div>
+                </div>
+                <div class="header__input">
+                    <input onkeyup="myFunction()" id="find__input" class="header__input_text" type="text" placeholder="Type something...">
+                    <div>
+                    <button id="header__button__serch" class="header__button__serch">Search</button>
+                    <button id="header__button__clear" class="header__button__clear">Clear</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="left__section">
+            <h3 class="main__header">Manage Cars</h3>
+            <button class="main__button_sort" id="sort_items_asc">Sort by the most powerful car</button>
+            <button class="main__button_sort" id="sort_items_desc">Sort by the lowest speed</button>
+            <hr>
+            <h2 class="main__title_count">Count total power:</h2>
+            <button id = "count_total" type="button" class="main__button_count">Count</button>
+            <h2 class="main__subtittle_total">Total power: <span id="total_power">  </span></h2>
+            <h2 class="main__subtittle_total">Found items: <span id="items_counter">oops....</span></h2>
+        </div>
+        <div class="right_-section">
+                <ul id="items_container">
+                    <li >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</section>
+    <section id ="create__car" class="create__car">
+        <div class="bild__car">
+        <legend>Create car</legend>
+            <p class="paragraph">
+              <label for="name">Mark</label>
+              <input type="text" class="title_input" id="title_input" placeholder="Some text..." />
+            </p>
+            <p  class="paragraph">
+                <label for="name">Description</label>
+                <input type="text" id="description_input"
+                class="description_input" />
+              </p>
+            <p  class="paragraph">
+              <label for="price">Power</label>
+              <input class="power__input" type="text" id="power__input" />
+            </p>
+            <p class="paragraph">
+                <label for="price">Max speed</label>
+                <input class="max-speed_input" type="text" id="max-speed_input" />
+              </p>
+              <button id="create__sumnit" class="create__sumnit" type="button">Submit</button>
+        </div>
+    </section>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
