@@ -15,11 +15,13 @@ class MainCatalog extends Component  {
             speed: '',
             records: [],
             find__input: '',
+            reso: []
         };
         this.sortPowerByDsc = this.sortPowerByDsc.bind(this);
         this.sortPowerByAsc = this.sortPowerByAsc.bind(this);
         this.sortSpeedAsc = this.sortSpeedAsc.bind(this);
         this.sortSpeedByDsc = this.sortSpeedByDsc.bind(this);
+        this.searchByTitle = this.searchByTitle.bind(this);
       };
       handleChange = (evt) => {
         this.setState({
@@ -60,27 +62,41 @@ class MainCatalog extends Component  {
           return this.state.records.sort((a, b) => (a.speed - b.speed))
       });
       }
-  render() {
+      searchByTitle  = () => {
+        this.setState ({
+          records: this.state.records.filter((value) => {
+            return value.title.toLowerCase().includes(this.state.find__input.toLowerCase())
+            })
+        })
+      }
+
+  render() { 
     return (
       <div>
         <div className="heades-section">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Speed
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><button class="dropdown-item" onClick={this.sortSpeedByDsc}>Desc</button></li>
-                    <li><button class="dropdown-item" onClick = {this.sortSpeedAsc}>Lovest</button></li>
-                </ul>
+            <div className="dropdown__buttons" >
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Speed
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><button class="dropdown-item" onClick={this.sortSpeedByDsc}>Desc</button></li>
+                      <li><button class="dropdown-item" onClick = {this.sortSpeedAsc}>Lovest</button></li>
+                  </ul>
+              </div>
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Power
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><button class="dropdown-item" onClick={this.sortPowerByDsc} >Desc</button></li>
+                      <li><button class="dropdown-item" onClick={this.sortPowerByAsc}>Lovest</button></li>
+                  </ul>
+              </div>
             </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Power
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><button class="dropdown-item" onClick={this.sortPowerByDsc} >Desc</button></li>
-                    <li><button class="dropdown-item" onClick={this.sortPowerByAsc}>Lovest</button></li>
-                </ul>
+            <div className="input-group mb-3">
+              <input onChange={this.handleChange} value={this.state.find__input} name="find__input"  id="find__input" class="form-control input_text" type="text" placeholder="Type something..."/>
+              <button onClick={(e) => this.searchByTitle(e)}  id="header__button__serch" class="btn btn-secondary header__button__serch">Search</button>
             </div>
         </div  >
             <div className="tile-section">

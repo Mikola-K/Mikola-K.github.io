@@ -54,16 +54,3 @@ hr {
     padding: 10px 40px 10px 40px;
     font-weight: 400;
 }
-
-.dropdown {
-    margin-bottom: 20px;
-    padding: 0 20px 0 20px;
-}
-.heades-section {
-    display: flex;
-    justify-content: center;
-
-}
-.btn-secondary {
-    width: 150px;
-}

@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import Header from '../HomeComponent/Header/header'
 import Footer from '../HomeComponent/Footer/Footer'
+import mustang from '../../Assets/Images/mustang.png'
+import './itemDetail.css'
 
 class ItemDetail extends Component  {
     constructor(props) {
@@ -29,13 +31,18 @@ class ItemDetail extends Component  {
     return (
       <div >
         <Header/>
-         <div>
-            <li className="car__card">
-                    <h2 className="tile-section__title">{this.state.records.title}</h2>
-                    <h1 className="tile-section__subtitle">{this.state.records.description}</h1>
-                    <h1 >{this.state.records.power} lc</h1>
-                    <h1 >{this.state.records.speed} km</h1>
-            </li>
+        <div className="itms__selection">
+          <img className="mustang__images__item" src={mustang} />
+           <div>
+              <li className="car__card__item">
+                      <h2 className="item-section__title">{this.state.records.title}</h2>
+                      <h1 className="item-section__subtitle ">{this.state.records.description}</h1>
+                      <div className="items_description">
+                        <h1 className="item__power" >Speed: {this.state.records.power} lc</h1>
+                        <h1 className="item__speed" >Power: {this.state.records.speed} km</h1>
+                      </div>
+              </li>
+          </div>
         </div>
         <Footer/>
       </div >
