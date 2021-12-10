@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.footer__main {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.footer__ico {
+    width: 30px;
+    padding: 0 5px 0 5px;
+}

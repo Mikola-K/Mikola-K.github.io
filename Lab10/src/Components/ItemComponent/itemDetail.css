@@ -1,0 +1,42 @@
+.mustang__images__item {
+    width: 50%;
+    height: 50%;
+    padding-left:  30px;
+}
+.itms__selection {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0 150px 0;
+}
+.car__card__item {
+    padding: 30px;
+}
+.item-section__title {
+    font-size: 46px;
+}
+
+.item-section__subtitle {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px 0 20px 0;
+    --bs-bg-opacity: 5;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    background-image: var(--bs-gradient);
+    border-radius: 10px;
+}
+.items_description {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item__power, .item__speed {
+    color: black;
+    padding: 5px 15px 5px 15px;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+    background-image: var(--bs-gradient);
+    border-radius: 10px;
+}
