@@ -1,0 +1,56 @@
+.nav {
+    /* position: relative;
+    z-index: 3;
+    width: 100vw;
+    text-align: center; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo {
+    font-family: 'Bebas Neue';
+    font-size: 3vw;
+    color: #d42d2d;
+    text-align: center;
+    
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 30%;
+    margin: 0; */
+}
+
+.navlist li {
+    list-style: none;
+    margin-top: 0.5vw;
+    padding-bottom: 1vw;
+
+}
+
+.navlist li a {
+    font-size: 1vw;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    padding: 0 5vw;
+    color: black;
+}
+.hr_nav {
+    width: 100%;
+    margin-top: 0;
+}
+hr {
+    margin-top: 0;
+    width: 100%;
+}
+
+.btn-light {
+    border-radius: 9px;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 10px 40px 10px 40px;
+    font-weight: 400;
+}
